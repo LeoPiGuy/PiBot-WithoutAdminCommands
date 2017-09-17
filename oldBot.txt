@@ -1,0 +1,10 @@
+var Discord = require("discord.js");
+var bot = new Discord.Client();
+
+bot.on("message", msg => {
+	if (msg.content.startsWith("ping")) {
+		bot.sendMessage(msg, "pong!");
+	}
+});
+
+bot.loginWithToken("MzM1MDQzMTYwNDExNjAyOTQ0.DEkA_A.DXJsrA6aYSolRHFNnknXtU4S2NE");
